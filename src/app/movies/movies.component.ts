@@ -1,31 +1,40 @@
 import { Component, OnInit } from '@angular/core';
 import { AlertifyService } from 'src/services/alertify.service';
+import { MovieService } from 'src/services/movie.service';
 import { Movie } from '../models/movie';
-import { MovieRepository } from '../models/movie.repository';
+
 
 
 @Component({
   selector: 'app-movies',
   templateUrl: './movies.component.html',
-  styleUrls: ['./movies.component.css']
+  styleUrls: ['./movies.component.css'],
+  providers:[MovieService]
 })
 export class MoviesComponent implements OnInit {
 
   title="Film Listesi";
   popularMovies:Movie[]
-  movies:Movie[];
-  FilteredMovies:Movie[];
-  movieRepository:MovieRepository;
+  movies:Movie[]=[];
+  FilteredMovies:Movie[]=[];
+  
   filterText:string="";
 
-  constructor(private alertify:AlertifyService) { // Alertify Service inject edilir. kopya oluşturulur.
-    this.movieRepository= new MovieRepository();
-    this.movies=this.movieRepository.getMovies();
-    this.popularMovies=this.movieRepository.getPopularMovies();
-    this.FilteredMovies=this.movies;
+  constructor(private alertify:AlertifyService,
+              private movieService:MovieService  ) { // Alertify Service inject edilir. kopya oluşturulur.
+    
+    
    }
 
   ngOnInit(): void {
+      this.movieService.getMovies().subscribe(data=>{
+      this.movies=data;
+      this.FilteredMovies=this.movies;
+   });
+
+  //  this.http.get("https://jsonplaceholder.typicode.com/users").subscribe(data=>{
+  //    console.log(data);
+  //  })
   }
   onInputChange(){
      this.FilteredMovies = this.filterText?
