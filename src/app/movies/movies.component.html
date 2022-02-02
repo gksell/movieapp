@@ -2,11 +2,15 @@
 <div *ngIf="movies.length>0; else no_movies">
     <h1 >{{title}}</h1>
     <div class="alert alert-success" >
-        {{movies.length}} film bulundu.
+        {{FilteredMovies.length}} film bulundu.
     </div>
 
     <div class="mb-3">
-        <input  type="text" class="form-control" [(ngModel)]="filterText" placeholder="search...">
+        <input  type="text" 
+         class="form-control"
+         [(ngModel)]="filterText" 
+         (ngModelChange)="onInputChange()"
+         placeholder="search...">
         <small class="text-muted" *ngIf="filterText">Aradığınız kelime{{filterText}}</small>
     </div>
 <ng-template [ngTemplateOutlet]="movieList1"></ng-template>
@@ -19,7 +23,7 @@
 </ng-template>
 
 <ng-template #movieList1 >
-    <div class="card mb-3" *ngFor="let item of movies | movieFilter:filterText">
+    <div class="card mb-3" *ngFor="let item of FilteredMovies">
         <div class="row">
             <div class="col-md-3">
                 <img src="assets/img/{{item.imageUrl}}" class="img-fluid rounded-start">
@@ -28,7 +32,11 @@
                 <div class="card-body">
                     <h2 class="card-title">{{item.title}}</h2>
                     <p class="card-text">{{item.description}} </p>
-                    <button class="btn btn-sm btn-outline-primary">Detaylar</button>
+                    <div>
+                        <button class="btn btn-sm btn-outline-primary">Detaylar</button>
+                        <button (click)="addToList($event,item)" class="btn btn-sm btn-primary">Listeye Ekle</button>
+                    </div>
+                    
                 </div>
             </div>
         </div>

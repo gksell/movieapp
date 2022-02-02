@@ -9,8 +9,8 @@ export class MovieFilterPipe implements PipeTransform {
   transform(movies:Movie[],filterText:string): Movie[] {
     filterText=filterText.toLowerCase();
 
-    console.log(filterText);
-    console.log(movies);
+    // console.log(filterText);
+    // console.log(movies);
 
     return filterText? movies.filter((m:Movie)=>
     m.title.toLowerCase().indexOf(filterText)!== -1
