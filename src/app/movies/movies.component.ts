@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { AlertifyService } from 'src/services/alertify.service';
 import { MovieService } from 'src/services/movie.service';
 import { Movie } from '../models/movie';
@@ -21,16 +22,20 @@ export class MoviesComponent implements OnInit {
   filterText:string="";
 
   constructor(private alertify:AlertifyService,
-              private movieService:MovieService  ) { // Alertify Service inject edilir. kopya oluşturulur.
+              private movieService:MovieService,
+              private activatedRoute:ActivatedRoute  ) { // Alertify Service inject edilir. kopya oluşturulur.
     
     
    }
 
   ngOnInit(): void {
-      this.movieService.getMovies().subscribe(data=>{
-      this.movies=data;
-      this.FilteredMovies=this.movies;
-   });
+      this.activatedRoute.params.subscribe(params=>{
+      this.movieService.getMovies(params["categoryId"]).subscribe(data=>{
+        this.movies=data;
+        this.FilteredMovies=this.movies;
+     },error=>console.log(error));
+    });
+      
 
   //  this.http.get("https://jsonplaceholder.typicode.com/users").subscribe(data=>{
   //    console.log(data);

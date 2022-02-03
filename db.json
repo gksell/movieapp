@@ -1,11 +1,11 @@
 {
     "movies":[
-        {"id":1,"title":"Film1","description":"merhaba","imageUrl":"dlu.jpg","isPopular":0},
-        {"id":2,"title":"Film2","description":"filmvar","imageUrl":"dlu.jpg","isPopular":0},
-        {"id":3,"title":"Film3","description":"hd cehennemi","imageUrl":"dlu.jpg","isPopular":1},
-        {"id":4,"title":"Film444","description":"lorem100","imageUrl":"dlu.jpg","isPopular":1},
-        {"id":5,"title":"Fil555","description":"hellooooooooo","imageUrl":"dlu.jpg","isPopular":0},
-        {"id":6,"title":"Harika Film","description":"jjjjjjjjjjjjjjjjjjjjjjjjj","imageUrl":"dlu.jpg","isPopular":0}
+        {"id":1,"title":"Film1","description":"merhaba","imageUrl":"dlu.jpg","isPopular":0,"categoryId":1},
+        {"id":2,"title":"Film2","description":"filmvar","imageUrl":"dlu.jpg","isPopular":0,"categoryId":2},
+        {"id":3,"title":"Film3","description":"hd cehennemi","imageUrl":"dlu.jpg","isPopular":1,"categoryId":5},
+        {"id":4,"title":"Film444","description":"lorem100","imageUrl":"dlu.jpg","isPopular":1,"categoryId":5},
+        {"id":5,"title":"Fil555","description":"hellooooooooo","imageUrl":"dlu.jpg","isPopular":0,"categoryId":3},
+        {"id":6,"title":"Harika Film","description":"jjjjjjjjjjjjjjjjjjjjjjjjj","imageUrl":"dlu.jpg","isPopular":0,"categoryId":1}
       ],
       "categories":[
         {"id":1,"name":"Korku"},
