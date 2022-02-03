@@ -4,6 +4,7 @@ export interface Movie{
     description:string;
     imageUrl:string;
     isPopular:boolean;
-    datePublished:Date;
+    datePublished:number;
+    categoryId:number;
 
 }

@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Movie } from "src/app/models/movie";
@@ -21,5 +21,14 @@ export class MovieService{
 
     getMovieById(movieId:number):Observable<Movie>{
         return this.http.get<Movie>(this.url+"/"+movieId);
+    }
+    createMovie(movie:Movie):Observable<Movie>{
+        const httpOptions={
+            headers:new HttpHeaders({
+                'Content-Type':'application/json',
+                'Authorization':'Token'
+            })
+        }
+        return this.http.post<Movie>(this.url,movie,httpOptions)
     }
 }

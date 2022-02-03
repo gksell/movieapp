@@ -1,23 +1,131 @@
 {
-    "movies":[
-        {"id":1,"title":"Film1","description":"merhaba","imageUrl":"dlu.jpg","isPopular":0,"categoryId":1},
-        {"id":2,"title":"Film2","description":"filmvar","imageUrl":"dlu.jpg","isPopular":0,"categoryId":2},
-        {"id":3,"title":"Film3","description":"hd cehennemi","imageUrl":"dlu.jpg","isPopular":1,"categoryId":5},
-        {"id":4,"title":"Film444","description":"lorem100","imageUrl":"dlu.jpg","isPopular":1,"categoryId":5},
-        {"id":5,"title":"Fil555","description":"hellooooooooo","imageUrl":"dlu.jpg","isPopular":0,"categoryId":3},
-        {"id":6,"title":"Harika Film","description":"jjjjjjjjjjjjjjjjjjjjjjjjj","imageUrl":"dlu.jpg","isPopular":0,"categoryId":1}
-      ],
-      "categories":[
-        {"id":1,"name":"Korku"},
-        {"id":2,"name":"Macera"},
-        {"id":3,"name":"Bilim Kurgu"},
-        {"id":4,"name":"Spor"},
-        {"id":5,"name":"Dram"},
-        {"id":6,"name":"Romantik"},
-        {"id":7,"name":"Komedi"},
-        {"id":8,"name":"Kısa Film"}
-
-      
-      ]
-      
+  "movies": [
+    {
+      "id": 1,
+      "title": "Film1",
+      "description": "merhaba",
+      "imageUrl": "dlu.jpg",
+      "isPopular": 0,
+      "categoryId": 1
+    },
+    {
+      "id": 2,
+      "title": "Film2",
+      "description": "filmvar",
+      "imageUrl": "dlu.jpg",
+      "isPopular": 0,
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "title": "Film3",
+      "description": "hd cehennemi",
+      "imageUrl": "dlu.jpg",
+      "isPopular": 1,
+      "categoryId": 5
+    },
+    {
+      "id": 4,
+      "title": "Film444",
+      "description": "lorem100",
+      "imageUrl": "dlu.jpg",
+      "isPopular": 1,
+      "categoryId": 5
+    },
+    {
+      "id": 5,
+      "title": "Fil555",
+      "description": "hellooooooooo",
+      "imageUrl": "dlu.jpg",
+      "isPopular": 0,
+      "categoryId": 3
+    },
+    {
+      "id": 6,
+      "title": "Harika Film",
+      "description": "jjjjjjjjjjjjjjjjjjjjjjjjj",
+      "imageUrl": "dlu.jpg",
+      "isPopular": 0,
+      "categoryId": 1
+    },
+    {
+      "id": 7,
+      "title": "Korkunç bir film 5",
+      "description": "Çok korkutucu bir film kendisi.",
+      "imageUrl": "dlu.jpg",
+      "isPopular": false,
+      "categoryId": "1",
+      "datePublished": 1643917044737
+    },
+    {
+      "id": 8,
+      "title": "Şaban",
+      "description": "Kemal Sunal Filmlerinden efsane ",
+      "imageUrl": "dlu.jpg",
+      "isPopular": false,
+      "categoryId": "7",
+      "datePublished": 1643917199243
+    },
+    {
+      "id": 9,
+      "title": "Merve&Göksel",
+      "description": "Benim masa örtülü sevgilim çok tatlı <3\n29.07.2020",
+      "imageUrl": "dlu.jpg",
+      "isPopular": false,
+      "categoryId": "6",
+      "datePublished": 1643918828280
+    },
+    {
+      "id": 10,
+      "title": "Test Filmi",
+      "description": "12312312312312",
+      "imageUrl": "1.jpg",
+      "isPopular": false,
+      "categoryId": "8",
+      "datePublished": 1643918869057
+    },
+    {
+      "id": 11,
+      "title": "DENEME 333",
+      "description": "DENEMEE FİLMİİİİ",
+      "imageUrl": "dlu.jpg",
+      "isPopular": false,
+      "categoryId": "8",
+      "datePublished": 1643918907417
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Korku"
+    },
+    {
+      "id": 2,
+      "name": "Macera"
+    },
+    {
+      "id": 3,
+      "name": "Bilim Kurgu"
+    },
+    {
+      "id": 4,
+      "name": "Spor"
+    },
+    {
+      "id": 5,
+      "name": "Dram"
+    },
+    {
+      "id": 6,
+      "name": "Romantik"
+    },
+    {
+      "id": 7,
+      "name": "Komedi"
+    },
+    {
+      "id": 8,
+      "name": "Kısa Film"
+    }
+  ]
 }
