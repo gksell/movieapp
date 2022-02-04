@@ -92,6 +92,23 @@
       "isPopular": false,
       "categoryId": "8",
       "datePublished": 1643918907417
+    },
+    {
+      "id": 12,
+      "title": "Film Başlığı",
+      "description": "Film Açıklaması",
+      "isPopular": false,
+      "categoryId": "4",
+      "datePublished": 1643998501297
+    },
+    {
+      "id": 13,
+      "title": "Efsane bir film 3",
+      "description": "efsane bir film",
+      "imageUrl": "dlu.jpg",
+      "isPopular": false,
+      "categoryId": "1",
+      "datePublished": 1643998665792
     }
   ],
   "categories": [
