@@ -1,5 +1,5 @@
-
-<div *ngIf="movies.length>0; else no_movies">
+<div *ngIf="!loading">
+    <div *ngIf="movies.length>0; else no_movies">
     <h1 >{{title}}</h1>
     <div class="alert alert-success" >
         {{FilteredMovies.length}} film bulundu.
@@ -15,6 +15,7 @@
     </div>
 <ng-template [ngTemplateOutlet]="movieList1"></ng-template>
 
+    </div>
 </div>
 <ng-template class="alert alert-warning"  #no_movies>
     <div class="alert alert-warning">
@@ -43,4 +44,9 @@
     </div>
 </ng-template>
 
+<div *ngIf="loading" class="text-center my-5">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
 

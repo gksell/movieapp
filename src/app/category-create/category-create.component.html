@@ -1,0 +1,10 @@
+<h1>Kategori Ekle</h1>
+
+<form (ngSubmit)="createCategory(name.value)">
+    <div>
+        <label for="name" class="form-label"> Kategori İsmi</label>
+        <input #name type="text" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

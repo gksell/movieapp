@@ -109,6 +109,30 @@
       "isPopular": false,
       "categoryId": "1",
       "datePublished": 1643998665792
+    },
+    {
+      "id": 14,
+      "title": "BlackList",
+      "description": "Raymond Reddingtonun gizemli hayatı acaba 9. sezonda neler oluyor. Bakmak Lazım...",
+      "imageUrl": "dlu.jpg",
+      "isPopular": false,
+      "categoryId": "1",
+      "datePublished": 1644003644113
+    },
+    {
+      "id": 15,
+      "isPopular": false,
+      "categoryId": "",
+      "datePublished": 1644180656494
+    },
+    {
+      "id": 16,
+      "title": "fffffffffff",
+      "description": "ffffffffffffffffffffff",
+      "imageUrl": "f.jpg",
+      "isPopular": false,
+      "categoryId": "6",
+      "datePublished": 1644180719566
     }
   ],
   "categories": [
